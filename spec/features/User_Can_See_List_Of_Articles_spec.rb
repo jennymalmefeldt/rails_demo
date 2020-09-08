@@ -3,6 +3,7 @@ require "rails_helper"
 feature 'List articles on index page' do
   context 'with articles in db' do
     before do
+      create(:article, title: "A breaking news item")
       visit root_path
     end
 
