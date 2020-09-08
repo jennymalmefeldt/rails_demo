@@ -5,7 +5,7 @@ feature 'List articles on index page' do
     before do
       create(:article, title: "A breaking news item")
       visit root_path
-    end
+    end   
 
     it 'displays first article title' do
       expect(page).to have_content 'A breaking news item'
