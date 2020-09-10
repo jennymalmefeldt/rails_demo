@@ -9,7 +9,7 @@ feature 'User can see specific article' do
 
   context 'Article displays' do
     it 'title' do
-      expect(page).to have content 'A breaking news item'
+      expect(page).to have_content 'A breaking news item'
     end
 
     it 'content' do
